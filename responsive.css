@@ -1,6 +1,35 @@
 
 @media screen and (max-width : 922px){
-    .container-fluid .row .col-sm-auto{
+    .container-fluid .row .col-lg-auto .rounded-circle{
+        display: none;
+    }
+
+    .container-fluid .col-lg-auto .rounded-pill{
+        display: none;
+    }
+
+    .container-fluid .row .col-lg-auto .row.mt-5.pt-5{
+        display: none;
+    }
+    
+    .container-fluid .row .col-lg-auto h6.text-white{
+        display: none;
+    }
+
+    .container-fluid .col-lg-auto .rounded-3 .col-8 {
+        display: none;
+    }
+
+    .container-fluid .col-lg-auto .row.d-flex.flex-lg-column{
+        background-color: #313131;
+        border: 1px solid #717171;
+    }
+
+    .container-fluid .col-lg-auto .rounded-3 {
+        width: 75px;
+    }
+
+    #home .col-auto button.btn{
         display: none;
     }
 
@@ -8,6 +37,7 @@
         width: 270px;
         height: 240px;
     }
+
 
      #home2 .row.my-5 .col-lg-9 .card img {
         width: 190px;
@@ -34,8 +64,9 @@
         height: 200px;
     }
 
-    #project .col-6 .rounded-4 .col-6 .rounded-4 img {
-        height: 200px;
+    #project .col-lg-6 .rounded-4 .col-md-6 .rounded-4 img {
+        height: 280px;
+        width: 300px;
     }
 
 }
@@ -77,6 +108,11 @@
 
     #profile p, #profile2 p, #profile3 p {
         font-size: 14px;
+    }
+
+     #project .col-lg-6 .rounded-4 .col-md-6 .rounded-4 img {
+        height: 300px;
+        width: 344px;
     }
 }
 

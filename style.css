@@ -13,50 +13,55 @@
     height: 17px;
 }
 
-.container-fluid .col-sm-auto .rounded-circle {
+.container-fluid .col-lg-auto .rounded-circle {
     width: 100px; 
     height: 100px;
 }
-.container-fluid .col-sm-auto h6{
+.container-fluid .col-lg-auto h6{
     font-size: 16px;
     font-weight: 500;
 }
 
-.container-fluid .col-sm-auto .rounded-pill.d-flex.justify-content-center{
+.container-fluid .col-lg-auto .rounded-pill.d-lg-flex.justify-content-center{
     background: rgb(0, 255, 0, 30%);
     width: 170px;
     height: 20px;
 }
 
-.container-fluid .col-sm-auto .rounded-3 {
+.container-fluid .col-lg-auto .rounded-circle img{
+    width: 90px;
+    height: 90px;
+}
+
+.container-fluid .col-lg-auto .rounded-3 {
     width: 194px;
 }
 
-.container-fluid .col-sm-auto .rounded-3 .col-8 h6{
+.container-fluid .col-lg-auto .rounded-3 .col-8 h6{
     font-size: 14px;
     font-weight: 400;
     color: #C8C7C7;
 }
 
-.container-fluid .col-sm-auto .rounded-pill .rounded-circle {
+.container-fluid .col-lg-auto .rounded-pill .rounded-circle {
     width: 5px; 
     height: 5px;
 }
 
-.container-fluid .col-sm-auto .rounded-pill .text-center {
+.container-fluid .col-lg-auto .rounded-pill .text-center {
     font-size: 12px;
 }
 
-.container-fluid .col-sm-auto .row .rounded-pill {
+.container-fluid .col-lg-auto .row .rounded-pill {
     width: 80px;
 }
 
-.container-fluid .col-sm-auto .row .rounded-pill .rounded-circle {
+.container-fluid .col-lg-auto .row .rounded-pill .rounded-circle {
     width: 30px;
     height: 30px;
 }
 
-.container-fluid .col-sm-auto .row p{
+.container-fluid .col-lg-auto .row p{
     font-size: 12px;
     color: #C8C7C7;
 }
@@ -103,7 +108,7 @@
     background-color: #D9D9D9;
 }
 
-#home2 .row.my-5.pt-5 .col-lg-3 .col-sm-2 button{
+#home2 .row.my-5.pt-5 .col-lg-3 .col-lg-2 button{
    background-color: #383838;
 }
 
@@ -111,6 +116,10 @@
     width: 37px;
     height: 37px;
 }
+
+#home2 .row.my-5 .col-lg-3 .col-sm-2 button{
+        background-color: #313131;
+    }
 
 #home2 .row.my-5 .col-lg-9 .card {
     width: 270px;
@@ -128,6 +137,10 @@
 }
 
 #home2 .col-4 .container .my-3 .progress {
+    height: 8px;
+}
+
+#home2 .serviceSwiper .card-body .progress {
     height: 8px;
 }
 
@@ -248,79 +261,16 @@
     font-size: 14px;
 }
 
-/* toogle menu */
-
-#home #menu-button{
-        display: none;
-    }
-
-#home #menu-button{
-    width: 36px;
-    height: 36px;
-    background-color: #676767;
-}
-
-#home #menu-button #menu-label{
-    height: 32px;
-    width: 32px;
-    top: 2px;
-    left: 2px;
-    cursor: pointer;
-    position: relative;
-}
-
-#home #menu-button #menu-checkbox {
-    display: none;
-}
-
-#hamburger, #menu-label:after, #menu-label::before {
-    position: absolute;
-    width: 75%;
-    height: 3px;
-    border-radius: 2px;
-    background-color: #D9D9D9;
-}
-
-#menu-label:after,#menu-label::before{
-    content: "";
-}
-
-#menu-label::before{
-    top: 8px;
-}
-
-#menu-label::after{
-    top: 20px;
-}
-
-#hamburger{
-    top: 14px;
-}
-
-#menu-label.active::before{
-    top: 15px;
-    rotate: 45deg;
-}
-
-#menu-label.active::after{
-    top: 15px;
-    rotate: -45deg;
-}
-
-#menu-label.active #hamburger{
-    display: none;
-}
-
 /* hover */
-.col-sm-auto .row.d-flex .rounded-3:hover {
+.col-lg-auto .row.d-flex .rounded-3:hover {
     background: rgba(217, 217, 217, 0.10);
 }
 
-#home2 .row.my-5.pt-5 .col-lg-3 .col-sm-2 button:hover, .col-auto button:hover{
+#home2 .row.my-5.pt-5 .col-lg-3 .col-lg-2 button:hover, .col-auto button:hover{
    background-color: #313131;
 }
 
-.col-sm-auto .row.mt-5 svg:hover{
+.col-lg-auto .row.mt-5 svg:hover{
     width: 20px;
     height: 20px;
 }
@@ -333,3 +283,35 @@
 #contact .col-lg-5 .rounded-4 button:hover{
     background-color: #383838;
 }
+
+footer{
+    background-color: #313131;
+}
+
+/* button copy */
+
+.copied {
+    background-color: #2e7d32 !important;
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+  }
+
+ #copyBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #copyBtn:hover {
+    background-color: #45a049;
+  }
+
+  #copyBtn.copied {
+    background-color: #2e7d32;
+    transform: scale(1.05);
+  }
