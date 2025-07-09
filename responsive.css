@@ -116,7 +116,10 @@
     }
 }
 
-@media screen and (max-width : 350px){
-
+@media screen and (max-width : 375px){
+    #project .col-lg-6 .rounded-4 .col-md-6 .rounded-4 img {
+        height: 280px;
+        width: 293px;
+    }
 }
 
